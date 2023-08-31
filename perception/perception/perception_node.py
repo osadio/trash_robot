@@ -37,7 +37,7 @@ class PerceptionNode(Node):
     if (message.data == "trash"):
       msg.data = "trash detected"
     else:
-      msg.data = "no trash"
+      msg.data = "nothing detected"
     self.trashDetectionPublisher.publish(msg)
     self.get_logger().info('Publishing: "%s"' % msg.data)
 
